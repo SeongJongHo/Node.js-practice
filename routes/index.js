@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
 router.post('/products', productCtrl.addproduct)
 router.get('/products', productCtrl.getproduct)
 router.delete('/products', productCtrl.deleteproduct)
-router.put('/products', productCtrl.updateproduct)
+router.patch('/products', productCtrl.updateproduct)
 
 /* aritst */
 router.post('/artist', searchCtrl.addartist)

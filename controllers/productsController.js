@@ -52,9 +52,9 @@ module.exports = {
             })
         }
         console.log(req.body.price)
-        db.products.updateOne(
+        db.products.update(
             {_id:req.body.id},
-            {$set:{price:req.body.price}},
+            {$set:{product_price:req.body.price}},
             (err,result)=>{
                 if(err){
                     return res.json({
